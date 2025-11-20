@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+  </head>
+  <body>
+    <button class="red">redbtn</button>
+    <button class="yellow">yellowbtn</button>
+    <button class="blue">bluebtn</button>
+    <button class="pink">pinkbtn</button>
+    <button class="black">blackbtn</button>
+    <script>
+      // let redbtn = document.querySelector(".red");
+      // let yellowbtn = document.querySelector(".yellow");
+      // let bluebtn = document.querySelector(".blue");
+      // let pinkbtn = document.querySelector(".pink");
+      // let blackbtn = document.querySelector(".black");
+      // let blackbg = () => {
+      //   let body = document.querySelector("body");
+      //   body.style.backgroundColor = "black";
+      // };
+      // blackbtn.addEventListener("click", () => {
+      //   blackbg();
+      // });
+      // let pinkbg = () => {
+      //   let body = document.querySelector("body");
+      //   body.style.backgroundColor = "pink";
+      // };
+      // pinkbtn.addEventListener("click", () => {
+      //   pinkbg();
+      // });
+      // let bluebg = () => {
+      //   let body = document.querySelector("body");
+      //   body.style.backgroundColor = "blue";
+      // };
+      // bluebtn.addEventListener("click", () => {
+      //   bluebg();
+      // });
+      // let yellowbg = () => {
+      //   let body = document.querySelector("body");
+      //   body.style.backgroundColor = "yellow";
+      // };
+      // yellowbtn.addEventListener("click", () => {
+      //   yellowbg();
+      // });
+      // let redbg = () => {
+      //   let body = document.querySelector("body");
+      //   body.style.backgroundColor = "red";
+      // };
+      // redbtn.addEventListener("click", () => {
+      //   redbg();
+      // });
+      const buttons = document.querySelectorAll("button");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.body.style.backgroundColor = btn.className;
+        });
+      });
+    </script>
+  </body>
+</html>
